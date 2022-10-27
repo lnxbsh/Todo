@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            ToDo
+        </title>
+        <link href="{{ url_for('static', filename='style.css') }}s">
+    </head>
+    <body>
+        <p>Hello World!</p>
+        <div id="addtask" >
+            <input type="text" id="taskid" placeholder="Enter Task Here" maxlength="200"> 
+            <input type="button" onclick="add()" value="Add Task">
+        </div>
+        <ul id="checklist">
+
+        </ul>
+
+
+
+        <div> 
+            <h2>
+                Completed Tasks
+            </h2>
+            <ui id="CompletedTask">
+
+            </ui>
+        </div>
+
+        <div>
+            <h2>
+                Pending Tasks
+            </h2>
+            <ui id="pnl">
+                
+            </ui>
+        </div>
+        <script type="text/javascript"
+        src="{{ url_for('static', filename='baber.js') }}"></script>
+    </body>
+</html>
